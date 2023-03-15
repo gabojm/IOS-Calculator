@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		83077B37266EBBFD007D3895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077B36266EBBFD007D3895 /* AppDelegate.swift */; };
-		83077B39266EBBFD007D3895 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077B38266EBBFD007D3895 /* SceneDelegate.swift */; };
-		83077B3B266EBBFD007D3895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077B3A266EBBFD007D3895 /* ViewController.swift */; };
-		83077B3E266EBBFD007D3895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83077B3C266EBBFD007D3895 /* Main.storyboard */; };
 		83077B40266EBBFE007D3895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83077B3F266EBBFE007D3895 /* Assets.xcassets */; };
 		83077B43266EBBFE007D3895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83077B41266EBBFE007D3895 /* LaunchScreen.storyboard */; };
 		83077B4E266EBBFE007D3895 /* IOS_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077B4D266EBBFE007D3895 /* IOS_CalculatorTests.swift */; };
 		83077B59266EBBFE007D3895 /* IOS_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077B58266EBBFE007D3895 /* IOS_CalculatorUITests.swift */; };
+		83077B78266EF726007D3895 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077B76266EF726007D3895 /* HomeViewController.swift */; };
+		83077B79266EF726007D3895 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83077B77266EF726007D3895 /* HomeViewController.xib */; };
+		83077B7B266FEBF9007D3895 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83077B7A266FEBF9007D3895 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +37,6 @@
 /* Begin PBXFileReference section */
 		83077B33266EBBFD007D3895 /* IOS-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83077B36266EBBFD007D3895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83077B38266EBBFD007D3895 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83077B3A266EBBFD007D3895 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83077B3D266EBBFD007D3895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83077B3F266EBBFE007D3895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83077B42266EBBFE007D3895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83077B44266EBBFE007D3895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +46,9 @@
 		83077B54266EBBFE007D3895 /* IOS-CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IOS-CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83077B58266EBBFE007D3895 /* IOS_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_CalculatorUITests.swift; sourceTree = "<group>"; };
 		83077B5A266EBBFE007D3895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83077B76266EF726007D3895 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		83077B77266EF726007D3895 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		83077B7A266FEBF9007D3895 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				83077B36266EBBFD007D3895 /* AppDelegate.swift */,
-				83077B38266EBBFD007D3895 /* SceneDelegate.swift */,
-				83077B3A266EBBFD007D3895 /* ViewController.swift */,
-				83077B3C266EBBFD007D3895 /* Main.storyboard */,
+				83077B69266EC034007D3895 /* VIew */,
+				83077B68266EC02D007D3895 /* Controller */,
+				83077B67266EC026007D3895 /* Model */,
+				83077B6A266EC04F007D3895 /* Util */,
+				83077B66266EBC99007D3895 /* Supporting Files */,
 				83077B3F266EBBFE007D3895 /* Assets.xcassets */,
-				83077B41266EBBFE007D3895 /* LaunchScreen.storyboard */,
-				83077B44266EBBFE007D3895 /* Info.plist */,
 			);
 			path = "IOS-Calculator";
 			sourceTree = "<group>";
@@ -126,6 +126,70 @@
 				83077B5A266EBBFE007D3895 /* Info.plist */,
 			);
 			path = "IOS-CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		83077B66266EBC99007D3895 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83077B44266EBBFE007D3895 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83077B67266EC026007D3895 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		83077B68266EC02D007D3895 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				83077B6D266EC160007D3895 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		83077B69266EC034007D3895 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				83077B6B266EC0AC007D3895 /* Launch */,
+				83077B6C266EC14D007D3895 /* Home */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		83077B6A266EC04F007D3895 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				83077B7A266FEBF9007D3895 /* UIButtonExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		83077B6B266EC0AC007D3895 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				83077B41266EBBFE007D3895 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		83077B6C266EC14D007D3895 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83077B77266EF726007D3895 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		83077B6D266EC160007D3895 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83077B76266EF726007D3895 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +297,7 @@
 			files = (
 				83077B43266EBBFE007D3895 /* LaunchScreen.storyboard in Resources */,
 				83077B40266EBBFE007D3895 /* Assets.xcassets in Resources */,
-				83077B3E266EBBFD007D3895 /* Main.storyboard in Resources */,
+				83077B79266EF726007D3895 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +322,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83077B3B266EBBFD007D3895 /* ViewController.swift in Sources */,
 				83077B37266EBBFD007D3895 /* AppDelegate.swift in Sources */,
-				83077B39266EBBFD007D3895 /* SceneDelegate.swift in Sources */,
+				83077B78266EF726007D3895 /* HomeViewController.swift in Sources */,
+				83077B7B266FEBF9007D3895 /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +360,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		83077B3C266EBBFD007D3895 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83077B3D266EBBFD007D3895 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83077B41266EBBFE007D3895 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,7 +494,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4522S96VNF;
-				INFOPLIST_FILE = "IOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "IOS-Calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4522S96VNF;
-				INFOPLIST_FILE = "IOS-Calculator/Info.plist";
+				INFOPLIST_FILE = "IOS-Calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
